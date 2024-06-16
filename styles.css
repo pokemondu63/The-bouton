@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#monBouton {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: #800080;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px black;
+}
+
+#monBouton:hover {
+  background-color: #9932CC;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2), 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+#monBouton:active {
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(3px);
+}
+
+#monBouton:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  box-shadow: none;
+}
